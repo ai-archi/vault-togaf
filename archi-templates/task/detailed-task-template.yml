@@ -24,6 +24,25 @@ steps:
       任务名称：{{ task.name }}
       任务描述：{{ task.description }}
       方案路径：{{ solutionPath }}
+
+      关联文件：
+      {% if relatedFiles %}
+      {% for file in relatedFiles %}
+      - {{ file.name }} ({{ file.type }}): {{ file.path }}
+        {% if file.vaultName %}所属 Vault: {{ file.vaultName }}{% endif %}
+      {% endfor %}
+      {% else %}
+      （暂无关联文件）
+      {% endif %}
+
+      关联的代码路径：
+      {% if relatedCodePaths %}
+      {% for codePath in relatedCodePaths %}
+      - {{ codePath }}
+      {% endfor %}
+      {% else %}
+      （暂无关联代码路径）
+      {% endif %}
       
       当前步骤表单数据：
       {% if formDataItems %}
@@ -61,6 +80,25 @@ steps:
       
       任务名称：{{ task.name }}
       方案路径：{{ solutionPath }}
+
+      关联文件（审查时需要考虑的上下文）：
+      {% if relatedFiles %}
+      {% for file in relatedFiles %}
+      - {{ file.name }} ({{ file.type }}): {{ file.path }}
+        {% if file.vaultName %}所属 Vault: {{ file.vaultName }}{% endif %}
+      {% endfor %}
+      {% else %}
+      （暂无关联文件）
+      {% endif %}
+
+      关联的代码路径（可能受影响的代码）：
+      {% if relatedCodePaths %}
+      {% for codePath in relatedCodePaths %}
+      - {{ codePath }}
+      {% endfor %}
+      {% else %}
+      （暂无关联代码路径）
+      {% endif %}
       
       当前步骤表单数据：
       {% if formDataItems %}
@@ -73,9 +111,9 @@ steps:
       
       请基于以上信息，对提案进行审查，并提供：
       1. 提案的优点
-      2. 存在的问题
+      2. 存在的问题（考虑对关联文件的影响）
       3. 改进建议
-      4. 风险评估
+      4. 风险评估（考虑对关联代码路径的影响）
     depends_on:
       - draft-proposal
 
@@ -99,6 +137,35 @@ steps:
       
       任务名称：{{ task.name }}
       方案路径：{{ solutionPath }}
+
+      关联的代码路径（需要修改或参考的代码文件）：
+      {% if relatedCodePaths %}
+      {% for codePath in relatedCodePaths %}
+      - {{ codePath }}
+      {% endfor %}
+      {% else %}
+      （暂无关联代码路径）
+      {% endif %}
+
+      关联的文档（参考文档）：
+      {% if relatedDocuments %}
+      {% for doc in relatedDocuments %}
+      - {{ doc.name }}: {{ doc.path }}
+        {% if doc.vaultName %}所属 Vault: {{ doc.vaultName }}{% endif %}
+      {% endfor %}
+      {% else %}
+      （暂无关联文档）
+      {% endif %}
+
+      关联的设计（参考设计）：
+      {% if relatedDesigns %}
+      {% for design in relatedDesigns %}
+      - {{ design.name }}: {{ design.path }}
+        {% if design.vaultName %}所属 Vault: {{ design.vaultName }}{% endif %}
+      {% endfor %}
+      {% else %}
+      （暂无关联设计）
+      {% endif %}
       
       当前步骤表单数据：
       {% if formDataItems %}
@@ -110,9 +177,9 @@ steps:
       {% endif %}
       
       请基于以上信息，生成实现方案，包括：
-      1. 技术实现方案
+      1. 技术实现方案（参考关联的代码路径和文档）
       2. 代码文件结构
-      3. 关键代码实现
+      3. 关键代码实现（基于关联代码路径进行修改）
       4. 测试计划
     depends_on:
       - review-alignment
@@ -137,6 +204,25 @@ steps:
       
       任务名称：{{ task.name }}
       方案路径：{{ solutionPath }}
+
+      关联的代码路径（需要测试的代码文件）：
+      {% if relatedCodePaths %}
+      {% for codePath in relatedCodePaths %}
+      - {{ codePath }}
+      {% endfor %}
+      {% else %}
+      （暂无关联代码路径）
+      {% endif %}
+
+      关联的文档（测试参考文档）：
+      {% if relatedDocuments %}
+      {% for doc in relatedDocuments %}
+      - {{ doc.name }}: {{ doc.path }}
+        {% if doc.vaultName %}所属 Vault: {{ doc.vaultName }}{% endif %}
+      {% endfor %}
+      {% else %}
+      （暂无关联文档）
+      {% endif %}
       
       当前步骤表单数据：
       {% if formDataItems %}
@@ -148,7 +234,7 @@ steps:
       {% endif %}
       
       请基于以上信息，生成测试验证方案，包括：
-      1. 测试用例设计
+      1. 测试用例设计（针对关联的代码路径）
       2. 测试执行计划
       3. 测试结果分析
       4. 问题跟踪
@@ -170,6 +256,25 @@ steps:
       
       任务名称：{{ task.name }}
       方案路径：{{ solutionPath }}
+
+      关联的文档（可能需要更新的文档）：
+      {% if relatedDocuments %}
+      {% for doc in relatedDocuments %}
+      - {{ doc.name }}: {{ doc.path }}
+        {% if doc.vaultName %}所属 Vault: {{ doc.vaultName }}{% endif %}
+      {% endfor %}
+      {% else %}
+      （暂无关联文档）
+      {% endif %}
+
+      关联的代码路径（实现后的代码，用于更新文档）：
+      {% if relatedCodePaths %}
+      {% for codePath in relatedCodePaths %}
+      - {{ codePath }}
+      {% endfor %}
+      {% else %}
+      （暂无关联代码路径）
+      {% endif %}
       
       当前步骤表单数据：
       {% if formDataItems %}
@@ -181,8 +286,8 @@ steps:
       {% endif %}
       
       请基于以上信息，生成文档更新方案，包括：
-      1. 需要更新的文档列表
-      2. 每个文档的更新内容
+      1. 需要更新的文档列表（优先考虑关联的文档）
+      2. 每个文档的更新内容（基于关联代码路径的实现情况）
       3. 文档结构建议
       4. 归档建议
     depends_on:
