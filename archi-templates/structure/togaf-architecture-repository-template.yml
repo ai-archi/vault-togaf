@@ -177,30 +177,28 @@ structure:
             name: PrinciplesAlignment.md
             description: 原则对齐
             template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/PrinciplesAlignment.md
+          - type: directory
+            name: EnterpriseArchitecture
+            description: 企业级架构视图 - 跨领域的架构视图，包含企业级业务、应用、数据、技术架构
+            children:
+              - type: file
+                name: EnterpriseBusinessArchitecture.md
+                description: 企业级业务架构
+                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseBusinessArchitecture.md
+              - type: file
+                name: EnterpriseApplicationArchitecture.md
+                description: 企业级应用架构
+                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseApplicationArchitecture.md
+              - type: file
+                name: EnterpriseDataArchitecture.md
+                description: 企业级数据架构
+                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseDataArchitecture.md
+              - type: file
+                name: EnterpriseTechnologyArchitecture.md
+                description: 企业级技术架构
+                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseTechnologyArchitecture.md
 
-      # 3.2 Enterprise Architecture Domains（企业架构域）- 跨领域的架构视图
-      - type: directory
-        name: EnterpriseArchitectureDomains
-        description: 企业架构域 - 跨领域的架构视图，包含企业级业务、应用、数据、技术架构
-        children:
-          - type: file
-            name: EnterpriseBusinessArchitecture.md
-            description: 企业级业务架构
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/EnterpriseArchitectureDomains/EnterpriseBusinessArchitecture.md
-          - type: file
-            name: EnterpriseApplicationArchitecture.md
-            description: 企业级应用架构
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/EnterpriseArchitectureDomains/EnterpriseApplicationArchitecture.md
-          - type: file
-            name: EnterpriseDataArchitecture.md
-            description: 企业级数据架构
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/EnterpriseArchitectureDomains/EnterpriseDataArchitecture.md
-          - type: file
-            name: EnterpriseTechnologyArchitecture.md
-            description: 企业级技术架构
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/EnterpriseArchitectureDomains/EnterpriseTechnologyArchitecture.md
-
-      # 3.3 Segment Architecture（领域/业务线架构）- 面向业务域/BU
+      # 3.2 Segment Architecture（领域/业务线架构）- 面向业务域/BU
       - type: directory
         name: SegmentArchitecture
         description: 领域架构 - 面向业务域/BU，DDD/微服务拆分的核心落点
@@ -258,43 +256,39 @@ structure:
                     description: 过渡计划
                     template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TransitionPlan.md
 
-      # 3.4 Capability Architecture（能力级/项目级架构）- 面向具体项目/产品
+      # 3.3 Capability Architecture（能力级架构）- 面向能力单元
       - type: directory
         name: CapabilityArchitecture
-        description: 能力级架构 - 面向具体项目/产品，项目立项、架构评审用
+        description: 能力级架构 - 展示企业如何支持特定的能力单元，提供当前能力、目标能力和能力增量
         children:
           - type: directory
-            name: CRM-Rebuild
-            description: CRM重建项目
+            name: XXXCapability
+            description: XX能力单元
             children:
               - type: file
-                name: ArchitectureDefinition.md
-                description: 架构定义
-                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/ArchitectureDefinition.md
+                name: CurrentCapability.md
+                description: 当前能力
+                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/CurrentCapability.md
               - type: file
-                name: SolutionArchitecture.md
-                description: 解决方案架构
-                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/SolutionArchitecture.md
+                name: TargetCapability.md
+                description: 目标能力
+                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/TargetCapability.md
               - type: file
-                name: ImplementationPlan.md
-                description: 实施计划
-                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/ImplementationPlan.md
-          - type: directory
-            name: Payment-Upgrade
-            description: 支付升级项目
-            children:
-              - type: file
-                name: ArchitectureDefinition.md
-                description: 架构定义
-                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/ArchitectureDefinition.md
-              - type: file
-                name: SolutionArchitecture.md
-                description: 解决方案架构
-                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/SolutionArchitecture.md
-              - type: file
-                name: ImplementationPlan.md
-                description: 实施计划
-                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/ImplementationPlan.md
+                name: CapabilityIncrements.md
+                description: 能力增量
+                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/CapabilityIncrements.md
+              - type: directory
+                name: Projects
+                description: 关联项目（可选）
+                children:
+                  - type: directory
+                    name: Project-XXX
+                    description: 项目示例
+                    children:
+                      - type: file
+                        name: ProjectOverview.md
+                        description: 项目概览
+                        template: vault-assistant/archi-templates/content/markdown/design-overview.md
 
   # 4. Reference Library（参考库）- TOGAF核心区4
   - type: directory
