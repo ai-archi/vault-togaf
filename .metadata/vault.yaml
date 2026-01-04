@@ -1,25 +1,43 @@
-name: Demo Vault - AI Enhancement
-type: ai-enhancement
+name: TOGAF Vault
+type: togaf
 description: |
-  这是一个 AI 增强类型的演示 Vault，专注于 AI 增强功能。
-  
-  该 Vault 包含了以下内容：
-  - archi-ai-enhancements/: AI 增强命令，提供分析、优化、重构等功能
-    - commands/design-commands/: 设计相关的 AI 命令
-    - commands/file-commands/: 文件相关的 AI 命令
-    - commands/folder-commands/: 文件夹相关的 AI 命令
-  
-  AI 增强类型的 Vault 主要用于存储和管理 AI 增强命令，帮助用户通过 AI 助手
-  进行文档分析、优化、重构等操作。
+  这是一个专注于 TOGAF 企业架构的 Vault，提供 TOGAF 标准的文档模板和 AI 增强命令。
+
+  ## 模板资源
+
+  - `archi-templates/structure/togaf-architecture-repository-template.yml`: TOGAF 架构资源库标准目录结构
+  - `archi-templates/content/enterprise-architecture/`: TOGAF 企业架构文档模板
+    - Architecture Capability: 架构能力框架
+    - Architecture Landscape: 架构景观（战略级、领域级、能力级）
+    - Architecture Metamodel: 架构元模型
+    - Architecture Requirements: 架构需求
+    - Governance Log: 治理日志
+    - Reference Library: 参考库
+    - Standards Information Base: 标准信息库
+  - `archi-templates/task/`: TOGAF 相关的任务流程模板
+
+  ## AI 增强命令
+
+  - `archi-ai-enhancements/commands/`: TOGAF 企业架构相关的 AI 增强命令
+    - 文件操作命令：创建、分析、优化企业架构文档
+    - 文件夹操作命令：分析、优化、重构架构目录结构
+    - 设计图操作命令：分析、优化架构设计图
+
+  ## 使用场景
+
+  1. 创建 TOGAF 架构资源库
+  2. 编写企业架构文档
+  3. 进行架构分析和优化
+  4. 管理架构治理流程
 
 # Git 仓库信息（如果是从 git clone 的 vault）
 remote:
-  url: 'https://github.com/ai-archi/vault-assistant'  # Git 仓库 URL，例如: https://github.com/user/repo.git 或 git@github.com:user/repo.git
-  branch: main  # 分支名称，默认为 main
-  sync: manual  # 同步策略: auto（自动）或 manual（手动）
+  url: "https://github.com/ai-archi/vault-togaf" # Git 仓库 URL
+  branch: main # 分支名称，默认为 main
+  sync: manual # 同步策略: auto（自动）或 manual（手动）
 
 # 权限控制
-readonly: true  # 是否只读，从 git clone 的 vault 默认为 true，本地创建的默认为 false
+readonly: true # 是否只读，从 git clone 的 vault 默认为 true，本地创建的默认为 false
 
 createdAt: 2025-11-22T00:00:00.000Z
-updatedAt: 2025-11-22T00:00:00.000Z
+updatedAt: 2025-01-20T00:00:00.000Z

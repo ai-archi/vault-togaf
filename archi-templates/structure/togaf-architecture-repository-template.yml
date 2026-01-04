@@ -6,7 +6,7 @@ structure:
   - type: file
     name: README.md
     description: 架构景观库入口说明
-    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/README.md
+    template: vault-assistant/archi-templates/content/enterprise-architecture/README.md
 
   # 1. Architecture Metamodel（架构元模型）- TOGAF核心区1
   - type: directory
@@ -20,19 +20,19 @@ structure:
           - type: file
             name: BusinessCapability.md
             description: 业务能力概念
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureMetamodel/Concept.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureMetamodel/Concept.md
           - type: file
             name: ApplicationComponent.md
             description: 应用组件概念
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureMetamodel/Concept.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureMetamodel/Concept.md
           - type: file
             name: DataEntity.md
             description: 数据实体概念
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureMetamodel/Concept.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureMetamodel/Concept.md
           - type: file
             name: TechnologyComponent.md
             description: 技术组件概念
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureMetamodel/Concept.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureMetamodel/Concept.md
       - type: directory
         name: Relationships
         description: 关系定义
@@ -40,19 +40,19 @@ structure:
           - type: file
             name: Dependency.md
             description: 依赖关系
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureMetamodel/Relationship.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureMetamodel/Relationship.md
           - type: file
             name: Realization.md
             description: 实现关系
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureMetamodel/Relationship.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureMetamodel/Relationship.md
           - type: file
             name: Flow.md
             description: 流关系
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureMetamodel/Relationship.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureMetamodel/Relationship.md
       - type: file
         name: NotationGuidelines.md
         description: 表示法指南
-        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureMetamodel/NotationGuidelines.md
+        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureMetamodel/NotationGuidelines.md
 
   # 2. Architecture Capability（架构能力）- TOGAF核心区2
   - type: directory
@@ -66,11 +66,11 @@ structure:
           - type: file
             name: ArchitectureBoard.md
             description: 架构委员会
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureCapability/ArchitectureBoard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureCapability/ArchitectureBoard.md
           - type: file
             name: RolesAndResponsibilities.md
             description: 角色与职责
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureCapability/RolesAndResponsibilities.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureCapability/RolesAndResponsibilities.md
       - type: directory
         name: Process
         description: 架构流程
@@ -78,11 +78,11 @@ structure:
           - type: file
             name: ADMProcess.md
             description: ADM流程
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureCapability/ADMProcess.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureCapability/ADMProcess.md
           - type: file
             name: ArchitectureReview.md
             description: 架构评审流程
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureCapability/ArchitectureReview.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureCapability/ArchitectureReview.md
       - type: directory
         name: Principles
         description: 架构原则
@@ -90,19 +90,19 @@ structure:
           - type: file
             name: BusinessPrinciples.md
             description: 业务原则
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureCapability/ArchitecturePrinciple.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureCapability/ArchitecturePrinciple.md
           - type: file
             name: DataPrinciples.md
             description: 数据原则
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureCapability/ArchitecturePrinciple.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureCapability/ArchitecturePrinciple.md
           - type: file
             name: ApplicationPrinciples.md
             description: 应用原则
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureCapability/ArchitecturePrinciple.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureCapability/ArchitecturePrinciple.md
           - type: file
             name: TechnologyPrinciples.md
             description: 技术原则
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureCapability/ArchitecturePrinciple.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureCapability/ArchitecturePrinciple.md
       - type: directory
         name: Maturity
         description: 成熟度模型
@@ -110,11 +110,11 @@ structure:
           - type: file
             name: ArchitectureMaturityModel.md
             description: 架构成熟度模型
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureCapability/ArchitectureMaturityModel.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureCapability/ArchitectureMaturityModel.md
           - type: file
             name: Tooling.md
             description: 工具链
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureCapability/Tooling.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureCapability/Tooling.md
           - type: file
             name: SkillsMatrix.xlsx
             description: 技能矩阵
@@ -125,7 +125,7 @@ structure:
           - type: file
             name: GovernanceFramework.md
             description: 治理框架
-            template: vault-assistant/archi-templates/content/markdown/design-overview.md
+            template: vault-assistant/archi-templates/content/design-overview.md
 
   # 3. Architecture Landscape（架构景观）- TOGAF核心区3 - 扁平化结构
   - type: directory
@@ -136,15 +136,15 @@ structure:
       - type: file
         name: CycleIndex.md
         description: ADM周期索引
-        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CycleIndex.md
+        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/CycleIndex.md
       - type: file
         name: ArchitectureVersionMatrix.md
         description: 架构版本矩阵
-        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/ArchitectureVersionMatrix.md
+        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/ArchitectureVersionMatrix.md
       - type: file
         name: StateTransitionLog.md
         description: 状态转换日志
-        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StateTransitionLog.md
+        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StateTransitionLog.md
       
       # 当前迭代周期（活跃）
       - type: directory
@@ -154,7 +154,7 @@ structure:
           - type: file
             name: CycleMetadata.md
             description: 周期元数据
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CycleMetadata.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/CycleMetadata.md
           # 战略级架构
           - type: directory
             name: StrategicArchitecture
@@ -171,23 +171,23 @@ structure:
                       - type: file
                         name: ArchitectureVision.md
                         description: 架构愿景声明
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/VisionStatement.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/VisionStatement.md
                       - type: file
                         name: ArchitectureGoals.md
                         description: 架构目标
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ArchitectureGoals.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ArchitectureGoals.md
                       - type: file
                         name: Stakeholders.md
                         description: 利益相关者分析
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Stakeholders.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Stakeholders.md
                       - type: file
                         name: ScopeAndConstraints.md
                         description: 范围与约束
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ScopeAndConstraints.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ScopeAndConstraints.md
                       - type: file
                         name: TargetStateOverview.md
                         description: 目标状态概览
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/TargetStateOverview.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/TargetStateOverview.md
                   - type: directory
                     name: Roadmaps
                     description: 战略路线图
@@ -195,11 +195,11 @@ structure:
                       - type: file
                         name: ThreeYearRoadmap.md
                         description: 三年路线图
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
                       - type: file
                         name: TransformationMap.md
                         description: 转型地图
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
                   - type: directory
                     name: EnterpriseArchitecture
                     description: 企业级架构视图
@@ -207,23 +207,23 @@ structure:
                       - type: file
                         name: EnterpriseBusinessArchitecture.md
                         description: 企业级业务架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseBusinessArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseBusinessArchitecture.md
                       - type: file
                         name: EnterpriseApplicationArchitecture.md
                         description: 企业级应用架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseApplicationArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseApplicationArchitecture.md
                       - type: file
                         name: EnterpriseDataArchitecture.md
                         description: 企业级数据架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseDataArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseDataArchitecture.md
                       - type: file
                         name: EnterpriseTechnologyArchitecture.md
                         description: 企业级技术架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseTechnologyArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseTechnologyArchitecture.md
                   - type: file
                     name: PrinciplesAlignment.md
                     description: 原则对齐
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/PrinciplesAlignment.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/PrinciplesAlignment.md
               - type: directory
                 name: Target
                 description: 目标架构
@@ -235,23 +235,23 @@ structure:
                       - type: file
                         name: ArchitectureVision.md
                         description: 架构愿景声明
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/VisionStatement.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/VisionStatement.md
                       - type: file
                         name: ArchitectureGoals.md
                         description: 架构目标
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ArchitectureGoals.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ArchitectureGoals.md
                       - type: file
                         name: Stakeholders.md
                         description: 利益相关者分析
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Stakeholders.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Stakeholders.md
                       - type: file
                         name: ScopeAndConstraints.md
                         description: 范围与约束
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ScopeAndConstraints.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ScopeAndConstraints.md
                       - type: file
                         name: TargetStateOverview.md
                         description: 目标状态概览
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/TargetStateOverview.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/TargetStateOverview.md
                   - type: directory
                     name: Roadmaps
                     description: 战略路线图
@@ -259,11 +259,11 @@ structure:
                       - type: file
                         name: ThreeYearRoadmap.md
                         description: 三年路线图
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
                       - type: file
                         name: TransformationMap.md
                         description: 转型地图
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
                   - type: directory
                     name: EnterpriseArchitecture
                     description: 企业级架构视图
@@ -271,23 +271,23 @@ structure:
                       - type: file
                         name: EnterpriseBusinessArchitecture.md
                         description: 企业级业务架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseBusinessArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseBusinessArchitecture.md
                       - type: file
                         name: EnterpriseApplicationArchitecture.md
                         description: 企业级应用架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseApplicationArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseApplicationArchitecture.md
                       - type: file
                         name: EnterpriseDataArchitecture.md
                         description: 企业级数据架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseDataArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseDataArchitecture.md
                       - type: file
                         name: EnterpriseTechnologyArchitecture.md
                         description: 企业级技术架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseTechnologyArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseTechnologyArchitecture.md
                   - type: file
                     name: PrinciplesAlignment.md
                     description: 原则对齐
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/PrinciplesAlignment.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/PrinciplesAlignment.md
               - type: directory
                 name: Transition
                 description: 过渡架构
@@ -295,7 +295,7 @@ structure:
                   - type: file
                     name: TransitionPlan.md
                     description: 过渡计划
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TransitionPlan.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TransitionPlan.md
           # 领域架构
           - type: directory
             name: SegmentArchitecture
@@ -312,19 +312,19 @@ structure:
                       - type: file
                         name: BusinessArchitecture.md
                         description: 业务架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/BusinessArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/BusinessArchitecture.md
                       - type: file
                         name: ApplicationArchitecture.md
                         description: 应用架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/ApplicationArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/ApplicationArchitecture.md
                       - type: file
                         name: DataArchitecture.md
                         description: 数据架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/DataArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/DataArchitecture.md
                       - type: file
                         name: TechnologyArchitecture.md
                         description: 技术架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TechnologyArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TechnologyArchitecture.md
                   - type: directory
                     name: Target
                     description: 目标架构
@@ -332,19 +332,19 @@ structure:
                       - type: file
                         name: BusinessArchitecture.md
                         description: 业务架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/BusinessArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/BusinessArchitecture.md
                       - type: file
                         name: ApplicationArchitecture.md
                         description: 应用架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/ApplicationArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/ApplicationArchitecture.md
                       - type: file
                         name: DataArchitecture.md
                         description: 数据架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/DataArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/DataArchitecture.md
                       - type: file
                         name: TechnologyArchitecture.md
                         description: 技术架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TechnologyArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TechnologyArchitecture.md
                   - type: directory
                     name: Transition
                     description: 过渡架构
@@ -352,7 +352,7 @@ structure:
                       - type: file
                         name: TransitionPlan.md
                         description: 过渡计划
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TransitionPlan.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TransitionPlan.md
           # 能力架构
           - type: directory
             name: CapabilityArchitecture
@@ -365,15 +365,15 @@ structure:
                   - type: file
                     name: CurrentCapability.md
                     description: 当前能力
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/CurrentCapability.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/CurrentCapability.md
                   - type: file
                     name: TargetCapability.md
                     description: 目标能力
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/TargetCapability.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/TargetCapability.md
                   - type: file
                     name: CapabilityIncrements.md
                     description: 能力增量
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/CapabilityIncrements.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/CapabilityIncrements.md
                   - type: directory
                     name: Projects
                     description: 关联项目（可选）
@@ -385,7 +385,7 @@ structure:
                           - type: file
                             name: ProjectOverview.md
                             description: 项目概览
-                            template: vault-assistant/archi-templates/content/markdown/design-overview.md
+                            template: vault-assistant/archi-templates/content/design-overview.md
       
       # 示例：已完成的迭代周期（归档）
       - type: directory
@@ -395,7 +395,7 @@ structure:
           - type: file
             name: CycleMetadata.md
             description: 周期元数据
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CycleMetadata.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/CycleMetadata.md
           - type: directory
             name: StrategicArchitecture
             description: 战略级架构
@@ -411,23 +411,23 @@ structure:
                       - type: file
                         name: ArchitectureVision.md
                         description: 架构愿景声明
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/VisionStatement.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/VisionStatement.md
                       - type: file
                         name: ArchitectureGoals.md
                         description: 架构目标
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ArchitectureGoals.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ArchitectureGoals.md
                       - type: file
                         name: Stakeholders.md
                         description: 利益相关者分析
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Stakeholders.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Stakeholders.md
                       - type: file
                         name: ScopeAndConstraints.md
                         description: 范围与约束
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ScopeAndConstraints.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ScopeAndConstraints.md
                       - type: file
                         name: TargetStateOverview.md
                         description: 目标状态概览
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/TargetStateOverview.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/TargetStateOverview.md
                   - type: directory
                     name: Roadmaps
                     description: 战略路线图
@@ -435,11 +435,11 @@ structure:
                       - type: file
                         name: ThreeYearRoadmap.md
                         description: 三年路线图
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
                       - type: file
                         name: TransformationMap.md
                         description: 转型地图
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
                   - type: directory
                     name: EnterpriseArchitecture
                     description: 企业级架构视图
@@ -447,23 +447,23 @@ structure:
                       - type: file
                         name: EnterpriseBusinessArchitecture.md
                         description: 企业级业务架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseBusinessArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseBusinessArchitecture.md
                       - type: file
                         name: EnterpriseApplicationArchitecture.md
                         description: 企业级应用架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseApplicationArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseApplicationArchitecture.md
                       - type: file
                         name: EnterpriseDataArchitecture.md
                         description: 企业级数据架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseDataArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseDataArchitecture.md
                       - type: file
                         name: EnterpriseTechnologyArchitecture.md
                         description: 企业级技术架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseTechnologyArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseTechnologyArchitecture.md
                   - type: file
                     name: PrinciplesAlignment.md
                     description: 原则对齐
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/PrinciplesAlignment.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/PrinciplesAlignment.md
               - type: directory
                 name: Target
                 description: 目标架构
@@ -475,23 +475,23 @@ structure:
                       - type: file
                         name: ArchitectureVision.md
                         description: 架构愿景声明
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/VisionStatement.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/VisionStatement.md
                       - type: file
                         name: ArchitectureGoals.md
                         description: 架构目标
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ArchitectureGoals.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ArchitectureGoals.md
                       - type: file
                         name: Stakeholders.md
                         description: 利益相关者分析
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Stakeholders.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Stakeholders.md
                       - type: file
                         name: ScopeAndConstraints.md
                         description: 范围与约束
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ScopeAndConstraints.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/ScopeAndConstraints.md
                       - type: file
                         name: TargetStateOverview.md
                         description: 目标状态概览
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/TargetStateOverview.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/TargetStateOverview.md
                   - type: directory
                     name: Roadmaps
                     description: 战略路线图
@@ -499,11 +499,11 @@ structure:
                       - type: file
                         name: ThreeYearRoadmap.md
                         description: 三年路线图
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
                       - type: file
                         name: TransformationMap.md
                         description: 转型地图
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/Roadmap.md
                   - type: directory
                     name: EnterpriseArchitecture
                     description: 企业级架构视图
@@ -511,23 +511,23 @@ structure:
                       - type: file
                         name: EnterpriseBusinessArchitecture.md
                         description: 企业级业务架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseBusinessArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseBusinessArchitecture.md
                       - type: file
                         name: EnterpriseApplicationArchitecture.md
                         description: 企业级应用架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseApplicationArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseApplicationArchitecture.md
                       - type: file
                         name: EnterpriseDataArchitecture.md
                         description: 企业级数据架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseDataArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseDataArchitecture.md
                       - type: file
                         name: EnterpriseTechnologyArchitecture.md
                         description: 企业级技术架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseTechnologyArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/EnterpriseArchitecture/EnterpriseTechnologyArchitecture.md
                   - type: file
                     name: PrinciplesAlignment.md
                     description: 原则对齐
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/PrinciplesAlignment.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/StrategicArchitecture/PrinciplesAlignment.md
               - type: directory
                 name: Transition
                 description: 过渡架构
@@ -535,7 +535,7 @@ structure:
                   - type: file
                     name: TransitionPlan.md
                     description: 过渡计划
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TransitionPlan.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TransitionPlan.md
           - type: directory
             name: SegmentArchitecture
             description: 领域架构
@@ -551,19 +551,19 @@ structure:
                       - type: file
                         name: BusinessArchitecture.md
                         description: 业务架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/BusinessArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/BusinessArchitecture.md
                       - type: file
                         name: ApplicationArchitecture.md
                         description: 应用架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/ApplicationArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/ApplicationArchitecture.md
                       - type: file
                         name: DataArchitecture.md
                         description: 数据架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/DataArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/DataArchitecture.md
                       - type: file
                         name: TechnologyArchitecture.md
                         description: 技术架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TechnologyArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TechnologyArchitecture.md
                   - type: directory
                     name: Target
                     description: 目标架构
@@ -571,19 +571,19 @@ structure:
                       - type: file
                         name: BusinessArchitecture.md
                         description: 业务架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/BusinessArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/BusinessArchitecture.md
                       - type: file
                         name: ApplicationArchitecture.md
                         description: 应用架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/ApplicationArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/ApplicationArchitecture.md
                       - type: file
                         name: DataArchitecture.md
                         description: 数据架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/DataArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/DataArchitecture.md
                       - type: file
                         name: TechnologyArchitecture.md
                         description: 技术架构
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TechnologyArchitecture.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TechnologyArchitecture.md
                   - type: directory
                     name: Transition
                     description: 过渡架构
@@ -591,7 +591,7 @@ structure:
                       - type: file
                         name: TransitionPlan.md
                         description: 过渡计划
-                        template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TransitionPlan.md
+                        template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/SegmentArchitecture/TransitionPlan.md
           - type: directory
             name: CapabilityArchitecture
             description: 能力架构
@@ -603,15 +603,15 @@ structure:
                   - type: file
                     name: CurrentCapability.md
                     description: 当前能力
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/CurrentCapability.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/CurrentCapability.md
                   - type: file
                     name: TargetCapability.md
                     description: 目标能力
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/TargetCapability.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/TargetCapability.md
                   - type: file
                     name: CapabilityIncrements.md
                     description: 能力增量
-                    template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/CapabilityIncrements.md
+                    template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureLandscape/CapabilityArchitecture/CapabilityIncrements.md
       
       # 历史归档目录（可选）
       - type: directory
@@ -630,15 +630,15 @@ structure:
           - type: file
             name: MicroservicePattern.md
             description: 微服务模式
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ReferenceLibrary/Pattern.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ReferenceLibrary/Pattern.md
           - type: file
             name: EventDriven.md
             description: 事件驱动模式
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ReferenceLibrary/Pattern.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ReferenceLibrary/Pattern.md
           - type: file
             name: StranglerPattern.md
             description: Strangler模式
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ReferenceLibrary/Pattern.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ReferenceLibrary/Pattern.md
       - type: directory
         name: ReferenceArchitectures
         description: 参考架构
@@ -646,11 +646,11 @@ structure:
           - type: file
             name: CloudNativeReference.md
             description: 云原生参考架构
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ReferenceLibrary/ReferenceArchitecture.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ReferenceLibrary/ReferenceArchitecture.md
           - type: file
             name: DataPlatformReference.md
             description: 数据平台参考架构
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ReferenceLibrary/ReferenceArchitecture.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ReferenceLibrary/ReferenceArchitecture.md
       - type: directory
         name: Templates
         description: 模板库
@@ -658,11 +658,11 @@ structure:
           - type: file
             name: ArchitectureDefinitionTemplate.md
             description: 架构定义模板
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ReferenceLibrary/Template.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ReferenceLibrary/Template.md
           - type: file
             name: ReviewChecklist.md
             description: 评审检查清单
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ReferenceLibrary/ReviewChecklist.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ReferenceLibrary/ReviewChecklist.md
 
   # 5. Standards Information Base（标准信息库）- TOGAF核心区5 - 扁平化结构
   - type: directory
@@ -676,27 +676,27 @@ structure:
           - type: file
             name: ApprovedLanguages.md
             description: 批准的语言（当前版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
           - type: file
             name: ApprovedLanguages-v1.0.md
             description: 批准的语言 v1.0（历史版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
           - type: file
             name: MiddlewareStandards.md
             description: 中间件标准（当前版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
           - type: file
             name: MiddlewareStandards-v1.0.md
             description: 中间件标准 v1.0（历史版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
           - type: file
             name: CloudStandards.md
             description: 云标准（当前版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
           - type: file
             name: CloudStandards-v1.0.md
             description: 云标准 v1.0（历史版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
       - type: directory
         name: SecurityStandards
         description: 安全标准
@@ -704,19 +704,19 @@ structure:
           - type: file
             name: Authentication.md
             description: 认证标准（当前版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
           - type: file
             name: Authentication-v1.0.md
             description: 认证标准 v1.0（历史版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
           - type: file
             name: DataSecurity.md
             description: 数据安全标准（当前版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
           - type: file
             name: DataSecurity-v1.0.md
             description: 数据安全标准 v1.0（历史版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
       - type: directory
         name: IntegrationStandards
         description: 集成标准
@@ -724,19 +724,19 @@ structure:
           - type: file
             name: APIGuidelines.md
             description: API指南（当前版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
           - type: file
             name: APIGuidelines-v1.0.md
             description: API指南 v1.0（历史版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
           - type: file
             name: MessagingStandards.md
             description: 消息标准（当前版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
           - type: file
             name: MessagingStandards-v1.0.md
             description: 消息标准 v1.0（历史版本）
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/StandardsInformationBase/TechnologyStandard.md
 
   # 6. Governance Log（治理记录）- TOGAF核心区6 - 按周期组织
   - type: directory
@@ -755,11 +755,11 @@ structure:
               - type: file
                 name: ADR-001-Use-Kafka.md
                 description: ADR-001 使用Kafka
-                template: vault-assistant/archi-templates/content/markdown/adr-template.md
+                template: vault-assistant/archi-templates/content/adr-template.md
               - type: file
                 name: ADR-002-Database-Choice.md
                 description: ADR-002 数据库选择
-                template: vault-assistant/archi-templates/content/markdown/adr-template.md
+                template: vault-assistant/archi-templates/content/adr-template.md
           - type: directory
             name: ComplianceReviews
             description: 合规评审
@@ -767,7 +767,7 @@ structure:
               - type: file
                 name: Review-Current.md
                 description: 当前周期评审
-                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/GovernanceLog/ComplianceReview.md
+                template: vault-assistant/archi-templates/content/enterprise-architecture/GovernanceLog/ComplianceReview.md
           - type: directory
             name: Exceptions
             description: 例外记录
@@ -775,7 +775,7 @@ structure:
               - type: file
                 name: StandardExceptions.md
                 description: 标准例外
-                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/GovernanceLog/StandardException.md
+                template: vault-assistant/archi-templates/content/enterprise-architecture/GovernanceLog/StandardException.md
       # 示例：周期1的治理记录
       - type: directory
         name: Cycle-2025-Q1
@@ -788,11 +788,11 @@ structure:
               - type: file
                 name: ADR-001-Use-Kafka.md
                 description: ADR-001 使用Kafka
-                template: vault-assistant/archi-templates/content/markdown/adr-template.md
+                template: vault-assistant/archi-templates/content/adr-template.md
               - type: file
                 name: ADR-002-Database-Choice.md
                 description: ADR-002 数据库选择
-                template: vault-assistant/archi-templates/content/markdown/adr-template.md
+                template: vault-assistant/archi-templates/content/adr-template.md
           - type: directory
             name: ComplianceReviews
             description: 合规评审
@@ -800,7 +800,7 @@ structure:
               - type: file
                 name: Review-2025-Q1.md
                 description: 2025年Q1评审
-                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/GovernanceLog/ComplianceReview.md
+                template: vault-assistant/archi-templates/content/enterprise-architecture/GovernanceLog/ComplianceReview.md
           - type: directory
             name: Exceptions
             description: 例外记录
@@ -808,7 +808,7 @@ structure:
               - type: file
                 name: StandardExceptions.md
                 description: 标准例外
-                template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/GovernanceLog/StandardException.md
+                template: vault-assistant/archi-templates/content/enterprise-architecture/GovernanceLog/StandardException.md
 
   # 7. Architecture Requirements Repository（架构需求库）- TOGAF补充组件
   - type: directory
@@ -822,11 +822,11 @@ structure:
           - type: file
             name: FunctionalRequirements.md
             description: 功能需求
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureRequirements/Requirement.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureRequirements/Requirement.md
           - type: file
             name: NonFunctionalRequirements.md
             description: 非功能需求
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureRequirements/Requirement.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureRequirements/Requirement.md
       - type: directory
         name: ArchitectureRequirements
         description: 架构需求
@@ -834,19 +834,19 @@ structure:
           - type: file
             name: BusinessArchitectureRequirements.md
             description: 业务架构需求
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureRequirements/Requirement.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureRequirements/Requirement.md
           - type: file
             name: ApplicationArchitectureRequirements.md
             description: 应用架构需求
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureRequirements/Requirement.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureRequirements/Requirement.md
           - type: file
             name: DataArchitectureRequirements.md
             description: 数据架构需求
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureRequirements/Requirement.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureRequirements/Requirement.md
           - type: file
             name: TechnologyArchitectureRequirements.md
             description: 技术架构需求
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureRequirements/Requirement.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureRequirements/Requirement.md
       - type: directory
         name: RequirementsTraceability
         description: 需求可追溯性
@@ -854,11 +854,11 @@ structure:
           - type: file
             name: RequirementsTraceabilityMatrix.md
             description: 需求追溯矩阵
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureRequirements/RequirementsTraceabilityMatrix.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureRequirements/RequirementsTraceabilityMatrix.md
           - type: file
             name: RequirementsChangeLog.md
             description: 需求变更日志
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureRequirements/RequirementsChangeLog.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureRequirements/RequirementsChangeLog.md
 
   # 8. Architecture Contract（架构契约）- TOGAF补充组件
   - type: directory
@@ -872,11 +872,11 @@ structure:
           - type: file
             name: ArchitectureServiceSLA.md
             description: 架构服务SLA
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureContracts/ServiceLevelAgreement.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureContracts/ServiceLevelAgreement.md
           - type: file
             name: ArchitectureSupportSLA.md
             description: 架构支持SLA
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureContracts/ServiceLevelAgreement.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureContracts/ServiceLevelAgreement.md
       - type: directory
         name: ArchitectureDeliverables
         description: 架构交付物契约
@@ -884,11 +884,11 @@ structure:
           - type: file
             name: ArchitectureDefinitionContract.md
             description: 架构定义契约
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureContracts/ArchitectureDeliverableContract.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureContracts/ArchitectureDeliverableContract.md
           - type: file
             name: ArchitectureReviewContract.md
             description: 架构评审契约
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureContracts/ArchitectureDeliverableContract.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureContracts/ArchitectureDeliverableContract.md
       - type: directory
         name: VendorContracts
         description: 供应商契约
@@ -896,4 +896,4 @@ structure:
           - type: file
             name: TechnologyVendorContract.md
             description: 技术供应商契约
-            template: vault-assistant/archi-templates/content/markdown/enterprise-architecture/ArchitectureContracts/VendorContract.md
+            template: vault-assistant/archi-templates/content/enterprise-architecture/ArchitectureContracts/VendorContract.md
