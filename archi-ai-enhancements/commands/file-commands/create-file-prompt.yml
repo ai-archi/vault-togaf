@@ -6,19 +6,20 @@ enabled: true
 order: 2
 content: |
   ## 任务
-  
-  根据参考文件，并基于文件模板 {{ templateFile.fullRelativePath }} ,创建{{ artifact.fullRelativePath }}.{{ artifact.format }}文件
-  
-  {% if artifact.folderPath %}
-  目标路径：{{ artifact.folderPath }}
-  {% endif %}
-  
+
+  基于文件模板：{{ templateFile.fullRelativePath }}，创建文件：{{ artifact.fullRelativePath }}.{{ artifact.format }}
+
+  ### 任务说明
+
+  本文件用于说明 XXX ，主要负责：
+  - XXX
+
   ## 链式提示
   1. 分析参考文件的结构、功能和设计模式
   2. 根据任务需求，设计新文件的架构和实现方案
   3. 创建符合项目规范和最佳实践的文件内容
   4. 确保新文件与现有代码库的兼容性和一致性
-  
+
   ### 约束
   1. 遵循项目的代码风格和命名规范
   2. 保持与参考文件相似的代码结构和组织方式
@@ -33,4 +34,3 @@ content: |
   {% endif %}
 createdAt: 2024-01-01T00:00:00Z
 updatedAt: 2024-01-01T00:00:00Z
-

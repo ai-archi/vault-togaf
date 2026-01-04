@@ -9,15 +9,17 @@ steps:
     form:
       title: 实现任务
       schema:
-        requirements:
+        content:
           type: textarea
-          title: 需求描述
-          description: 任务的具体需求描述
-          required: true
-        codeFiles:
-          type: array
-          title: 生成的代码文件
-          description: 根据需求生成的代码文件列表
+          title: 实现内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 需求描述：明确任务的具体需求描述和目标
+            2. 技术实现：参考关联代码路径和文档，确保实现方案可行
+            3. 代码结构：设计清晰的目录结构和模块划分
+            4. 关键实现：重点关注核心功能的代码实现细节
+            5. 测试计划：制定完整的测试策略和用例
+            6. 代码质量：遵循项目规范和最佳实践
           required: false
     prompt: |
       你是一个专业的软件开发工程师，需要基于以下信息实现任务：
@@ -75,10 +77,16 @@ steps:
     form:
       title: 归档更新
       schema:
-        updatedDocuments:
-          type: array
-          title: 已更新的文档
-          description: 需要更新或创建的文档列表
+        content:
+          type: textarea
+          title: 文档更新内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 文档列表：列出所有需要更新或创建的文档
+            2. 更新内容：基于实现后的代码，更新文档的具体内容
+            3. 文档结构：确保文档结构清晰、易于理解
+            4. 归档建议：提供文档归档的位置和分类建议
+            5. 版本管理：考虑文档版本控制和历史记录
           required: false
     prompt: |
       你是一个专业的文档管理专家，需要基于以下信息更新文档：

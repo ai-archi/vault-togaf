@@ -9,14 +9,16 @@ steps:
     form:
       title: 起草提案
       schema:
-        questions:
-          type: array
-          title: 问题列表
-          description: AI 将询问关键问题以明确需求
-        proposal:
+        content:
           type: textarea
-          title: 生成的提案
-          description: 基于问题回答生成的提案内容
+          title: 提案内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 需求分析：明确任务目标和业务价值
+            2. 技术方案：选择合适的技术栈和架构模式
+            3. 实施计划：制定清晰的实施步骤和时间安排
+            4. 风险评估：识别潜在风险并制定应对措施
+            5. 关联文件：考虑对现有文档和代码的影响
           required: false
     prompt: |
       你是一个专业的系统架构师，需要基于以下信息起草提案：
@@ -65,15 +67,16 @@ steps:
     form:
       title: 审查对齐
       schema:
-        proposal:
+        content:
           type: textarea
-          title: 提案内容
-          description: 待审查的提案内容
-          required: false
-        feedback:
-          type: textarea
-          title: 反馈意见
-          description: 对提案的反馈和修改建议
+          title: 审查反馈
+          description: |
+            💡 提示：请关注以下要点：
+            1. 提案优点：识别提案中的亮点和优势
+            2. 存在问题：检查技术方案的可行性和完整性
+            3. 改进建议：提供具体的优化方向和修改意见
+            4. 风险评估：评估对关联文件和代码路径的影响
+            5. 兼容性：确保方案与现有架构和代码兼容
           required: false
     prompt: |
       你是一个专业的系统架构审查专家，需要审查以下提案：
@@ -122,15 +125,16 @@ steps:
     form:
       title: 实现任务
       schema:
-        specification:
+        content:
           type: textarea
-          title: 规范内容
-          description: 经过审查和修改后的最终规范
-          required: false
-        codeFiles:
-          type: array
-          title: 生成的代码文件
-          description: 根据规范生成的代码文件列表
+          title: 实现内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 技术实现：参考关联代码路径和文档，确保实现方案可行
+            2. 代码结构：设计清晰的目录结构和模块划分
+            3. 关键实现：重点关注核心功能的代码实现细节
+            4. 测试计划：制定完整的测试策略和用例
+            5. 代码质量：遵循项目规范和最佳实践
           required: false
     prompt: |
       你是一个专业的软件开发工程师，需要基于以下信息实现任务：
@@ -189,15 +193,16 @@ steps:
     form:
       title: 测试验证
       schema:
-        testCases:
-          type: array
-          title: 测试用例
-          description: 用于验证代码正确性的测试用例列表
-          required: false
-        testResults:
+        content:
           type: textarea
-          title: 测试结果
-          description: 测试执行的结果和报告
+          title: 测试验证内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 测试用例：设计覆盖功能、边界和异常场景的测试用例
+            2. 测试执行：按照测试计划执行测试，记录详细的测试过程
+            3. 测试结果：分析测试结果，识别问题和缺陷
+            4. 问题跟踪：记录发现的问题，跟踪修复进度
+            5. 回归测试：确保新功能不影响现有功能
           required: false
     prompt: |
       你是一个专业的测试工程师，需要基于以下信息进行测试验证：
@@ -246,10 +251,16 @@ steps:
     form:
       title: 归档更新
       schema:
-        updatedDocuments:
-          type: array
-          title: 已更新的文档
-          description: 需要更新或创建的文档列表
+        content:
+          type: textarea
+          title: 文档更新内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 文档列表：列出所有需要更新或创建的文档
+            2. 更新内容：基于实现后的代码，更新文档的具体内容
+            3. 文档结构：确保文档结构清晰、易于理解
+            4. 归档建议：提供文档归档的位置和分类建议
+            5. 版本管理：考虑文档版本控制和历史记录
           required: false
     prompt: |
       你是一个专业的文档管理专家，需要基于以下信息更新文档：

@@ -9,25 +9,19 @@ steps:
     form:
       title: 现状分析
       schema:
-        refactoringGoal:
+        content:
           type: textarea
-          title: 重构目标
-          description: 描述本次重构的目标和期望达到的效果
-          required: false
-        focusAreas:
-          type: textarea
-          title: 关注点
-          description: 重点关注哪些方面（如：性能、可维护性、扩展性、代码质量等）
-          required: false
-        knownIssues:
-          type: textarea
-          title: 已知问题
-          description: 已经发现的问题或痛点
-          required: false
-        constraints:
-          type: textarea
-          title: 约束条件
-          description: 时间、资源、技术栈等约束条件
+          title: 现状分析内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 重构目标：明确本次重构的目标和期望达到的效果
+            2. 关注点：重点关注性能、可维护性、扩展性、代码质量等方面
+            3. 已知问题：列出已经发现的问题或痛点
+            4. 约束条件：说明时间、资源、技术栈等约束条件
+            5. 代码结构：分析当前代码的组织方式和模块划分
+            6. 依赖关系：分析模块间的依赖关系，识别循环依赖和紧耦合
+            7. 受影响文件：列出所有需要迁移、修改或删除的文件
+            8. 潜在风险：识别重构过程中可能遇到的技术和业务风险
           required: false
     prompt: |
       你是一个专业的系统架构师，需要分析当前代码库的现状，为架构重构做准备：
@@ -65,26 +59,13 @@ steps:
       （暂无关联文档）
       {% endif %}
       
-      {% if formData %}
-      {% if formData.refactoringGoal %}
-      重构目标：
-      {{ formData.refactoringGoal }}
-      {% endif %}
-
-      {% if formData.focusAreas %}
-      关注点：
-      {{ formData.focusAreas }}
-      {% endif %}
-
-      {% if formData.knownIssues %}
-      已知问题：
-      {{ formData.knownIssues }}
-      {% endif %}
-
-      {% if formData.constraints %}
-      约束条件：
-      {{ formData.constraints }}
-      {% endif %}
+      当前步骤表单数据：
+      {% if formDataItems %}
+      {% for item in formDataItems %}
+      - {{ item.key }}: {{ item.value }}
+      {% endfor %}
+      {% else %}
+      （暂无表单数据）
       {% endif %}
       
       请基于以上信息，进行详细的现状分析，包括：
@@ -95,7 +76,7 @@ steps:
       5. **潜在风险识别**：识别重构过程中可能遇到的技术风险、业务风险、兼容性风险
       6. **数据统计**：统计代码量、文件数量、依赖数量、测试覆盖率等关键指标
       
-      在分析时，请特别关注用户提供的重构目标、关注点和已知问题。
+      在分析时，请特别关注表单数据中提供的重构目标、关注点和已知问题。
     depends_on: []
 
   - id: architecture-design
@@ -103,25 +84,19 @@ steps:
     form:
       title: 架构设计
       schema:
-        designPrinciples:
+        content:
           type: textarea
-          title: 设计原则
-          description: 希望遵循的设计原则（如：SOLID、DDD、分层架构等）
-          required: false
-        techStack:
-          type: textarea
-          title: 技术选型
-          description: 技术栈偏好或约束（如：必须使用的框架、不能使用的技术等）
-          required: false
-        referenceArchitecture:
-          type: textarea
-          title: 参考架构
-          description: 参考的架构模式或现有架构（如：微服务、模块化、插件化等）
-          required: false
-        specialRequirements:
-          type: textarea
-          title: 特殊要求
-          description: 其他特殊需求或约束
+          title: 架构设计内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 设计原则：明确遵循的设计原则（如：SOLID、DDD、分层架构等）
+            2. 技术选型：说明技术栈偏好或约束（如：必须使用的框架、不能使用的技术等）
+            3. 参考架构：描述参考的架构模式或现有架构（如：微服务、模块化、插件化等）
+            4. 特殊要求：列出其他特殊需求或约束
+            5. 目标架构：设计新的目录结构、模块划分和依赖关系
+            6. 迁移策略：制定分阶段迁移计划、迁移顺序和回滚方案
+            7. 包结构：设计包命名规范、依赖管理和版本管理策略
+            8. 风险评估：识别技术风险、业务风险并制定应对措施
           required: false
     prompt: |
       你是一个专业的系统架构师，需要基于现状分析设计目标架构：
@@ -168,26 +143,13 @@ steps:
       （暂无关联设计）
       {% endif %}
       
-      {% if formData %}
-      {% if formData.designPrinciples %}
-      设计原则：
-      {{ formData.designPrinciples }}
-      {% endif %}
-
-      {% if formData.techStack %}
-      技术选型：
-      {{ formData.techStack }}
-      {% endif %}
-
-      {% if formData.referenceArchitecture %}
-      参考架构：
-      {{ formData.referenceArchitecture }}
-      {% endif %}
-
-      {% if formData.specialRequirements %}
-      特殊要求：
-      {{ formData.specialRequirements }}
-      {% endif %}
+      当前步骤表单数据：
+      {% if formDataItems %}
+      {% for item in formDataItems %}
+      - {{ item.key }}: {{ item.value }}
+      {% endfor %}
+      {% else %}
+      （暂无表单数据）
       {% endif %}
       
       请基于以上信息，设计详细的目标架构，包括：
@@ -214,7 +176,7 @@ steps:
          - 业务风险评估（评估对现有功能的影响）
          - 应对措施（针对每个风险点的缓解策略）
       
-      在设计时，请遵循用户指定的设计原则，考虑技术选型约束，参考提供的架构模式。
+      在设计时，请遵循表单数据中指定的设计原则，考虑技术选型约束，参考提供的架构模式。
     depends_on:
       - current-state-analysis
 
@@ -223,25 +185,20 @@ steps:
     form:
       title: 迁移计划
       schema:
-        timeConstraints:
+        content:
           type: textarea
-          title: 时间约束
-          description: 时间要求和截止日期
-          required: false
-        priorities:
-          type: textarea
-          title: 优先级
-          description: 功能或模块的优先级排序
-          required: false
-        resourceLimits:
-          type: textarea
-          title: 资源限制
-          description: 人力、环境等资源限制
-          required: false
-        riskTolerance:
-          type: textarea
-          title: 风险容忍度
-          description: 对风险的容忍度和应对策略偏好
+          title: 迁移计划内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 时间约束：明确时间要求和截止日期
+            2. 优先级：确定功能或模块的优先级排序
+            3. 资源限制：说明人力、环境等资源限制
+            4. 风险容忍度：说明对风险的容忍度和应对策略偏好
+            5. 阶段划分：制定每个阶段的名称、目标、任务清单和验收标准
+            6. 文件迁移清单：列出每个文件的源路径、目标路径和迁移优先级
+            7. 依赖更新计划：规划依赖配置文件、版本管理和依赖关系调整
+            8. 构建脚本更新：规划需要新增或修改的构建脚本和构建流程
+            9. 测试计划：制定每个阶段的测试策略、测试用例和回归测试计划
           required: false
     prompt: |
       你是一个专业的项目管理者，需要基于架构设计制定详细的迁移计划：
@@ -278,26 +235,13 @@ steps:
       （暂无关联设计）
       {% endif %}
       
-      {% if formData %}
-      {% if formData.timeConstraints %}
-      时间约束：
-      {{ formData.timeConstraints }}
-      {% endif %}
-
-      {% if formData.priorities %}
-      优先级：
-      {{ formData.priorities }}
-      {% endif %}
-
-      {% if formData.resourceLimits %}
-      资源限制：
-      {{ formData.resourceLimits }}
-      {% endif %}
-
-      {% if formData.riskTolerance %}
-      风险容忍度：
-      {{ formData.riskTolerance }}
-      {% endif %}
+      当前步骤表单数据：
+      {% if formDataItems %}
+      {% for item in formDataItems %}
+      - {{ item.key }}: {{ item.value }}
+      {% endfor %}
+      {% else %}
+      （暂无表单数据）
       {% endif %}
       
       请基于以上信息，制定详细的迁移计划，包括：
@@ -327,7 +271,7 @@ steps:
          - 回归测试计划
          - 性能测试计划
       
-      在制定计划时，请充分考虑时间约束、优先级和资源限制，根据风险容忍度调整策略。
+      在制定计划时，请充分考虑表单数据中提供的时间约束、优先级和资源限制，根据风险容忍度调整策略。
     depends_on:
       - architecture-design
 
@@ -336,20 +280,19 @@ steps:
     form:
       title: 分阶段实施
       schema:
-        currentPhase:
+        content:
           type: textarea
-          title: 当前阶段
-          description: 当前正在实施的阶段名称和主要任务
-          required: false
-        implementationFocus:
-          type: textarea
-          title: 实施重点
-          description: 本阶段重点关注的内容或需要特别注意的事项
-          required: false
-        specialInstructions:
-          type: textarea
-          title: 特殊说明
-          description: 实施过程中的特殊要求或注意事项
+          title: 实施内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 当前阶段：明确当前正在实施的阶段名称和主要任务
+            2. 实施重点：说明本阶段重点关注的内容或需要特别注意的事项
+            3. 特殊说明：列出实施过程中的特殊要求或注意事项
+            4. 当前阶段实施：执行当前阶段的任务，按照文件迁移清单逐个迁移或重构文件
+            5. 代码实现：创建新目录结构、迁移代码、重构代码、更新导入路径和依赖
+            6. 问题处理：记录实施过程中遇到的问题，提供解决方案和替代方案
+            7. 进度跟踪：记录已完成的文件和任务，更新实施进度和完成度
+            8. 下一步计划：明确下一阶段的任务和目标，准备实施环境和前置条件
           required: false
     prompt: |
       你是一个专业的软件开发工程师，需要基于迁移计划进行分阶段实施：
@@ -386,21 +329,13 @@ steps:
       （暂无关联设计）
       {% endif %}
       
-      {% if formData %}
-      {% if formData.currentPhase %}
-      当前阶段：
-      {{ formData.currentPhase }}
-      {% endif %}
-
-      {% if formData.implementationFocus %}
-      实施重点：
-      {{ formData.implementationFocus }}
-      {% endif %}
-
-      {% if formData.specialInstructions %}
-      特殊说明：
-      {{ formData.specialInstructions }}
-      {% endif %}
+      当前步骤表单数据：
+      {% if formDataItems %}
+      {% for item in formDataItems %}
+      - {{ item.key }}: {{ item.value }}
+      {% endfor %}
+      {% else %}
+      （暂无表单数据）
       {% endif %}
       
       请基于以上信息，进行分阶段实施，包括：
@@ -429,7 +364,7 @@ steps:
          - 准备下一阶段的实施环境和前置条件
          - 评估是否需要调整后续阶段的计划
       
-      在实施时，请重点关注用户指定的实施重点，遵循特殊说明。
+      在实施时，请重点关注表单数据中指定的实施重点，遵循特殊说明。
     depends_on:
       - migration-plan
 
@@ -438,20 +373,20 @@ steps:
     form:
       title: 测试验证
       schema:
-        testFocus:
+        content:
           type: textarea
-          title: 测试重点
-          description: 重点关注哪些方面的测试（如：功能、性能、兼容性等）
-          required: false
-        verificationCriteria:
-          type: textarea
-          title: 验证标准
-          description: 验证通过的标准或指标
-          required: false
-        knownIssues:
-          type: textarea
-          title: 已知问题
-          description: 实施过程中已知的问题，需要在测试中重点关注
+          title: 测试验证内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 测试重点：明确重点关注哪些方面的测试（如：功能、性能、兼容性等）
+            2. 验证标准：说明验证通过的标准或指标
+            3. 已知问题：列出实施过程中已知的问题，需要在测试中重点关注
+            4. 构建验证：验证新架构下的构建脚本、包构建、依赖关系和构建产物
+            5. 功能测试：设计功能测试用例，执行测试并验证所有功能是否正常
+            6. 集成测试：验证模块间的集成、接口调用、依赖注入和跨模块数据流
+            7. 回归测试：执行完整的回归测试套件，验证原有功能未受影响
+            8. 性能测试：测试启动时间、响应时间、内存使用，对比重构前后性能指标
+            9. 问题跟踪：记录发现的所有问题，跟踪修复进度，验证修复效果
           required: false
     prompt: |
       你是一个专业的测试工程师，需要基于重构后的代码进行全面的测试验证：
@@ -478,21 +413,13 @@ steps:
       （暂无关联文档）
       {% endif %}
       
-      {% if formData %}
-      {% if formData.testFocus %}
-      测试重点：
-      {{ formData.testFocus }}
-      {% endif %}
-
-      {% if formData.verificationCriteria %}
-      验证标准：
-      {{ formData.verificationCriteria }}
-      {% endif %}
-
-      {% if formData.knownIssues %}
-      已知问题：
-      {{ formData.knownIssues }}
-      {% endif %}
+      当前步骤表单数据：
+      {% if formDataItems %}
+      {% for item in formDataItems %}
+      - {{ item.key }}: {{ item.value }}
+      {% endfor %}
+      {% else %}
+      （暂无表单数据）
       {% endif %}
       
       请基于以上信息，进行全面的测试验证，包括：
@@ -526,7 +453,7 @@ steps:
          - 跟踪问题的修复进度
          - 验证问题修复后的效果
       
-      在测试时，请重点关注用户指定的测试重点，按照验证标准进行验证，特别关注已知问题。
+      在测试时，请重点关注表单数据中指定的测试重点，按照验证标准进行验证，特别关注已知问题。
     depends_on:
       - phase-implementation
 
@@ -535,20 +462,19 @@ steps:
     form:
       title: 文档更新
       schema:
-        docTypes:
+        content:
           type: textarea
-          title: 文档类型
-          description: 需要更新的文档类型（如：架构文档、API文档、用户手册等）
-          required: false
-        targetAudience:
-          type: textarea
-          title: 文档受众
-          description: 文档的目标受众（如：开发者、用户、运维人员等）
-          required: false
-        specialRequirements:
-          type: textarea
-          title: 特殊要求
-          description: 文档更新的特殊要求或格式要求
+          title: 文档更新内容
+          description: |
+            💡 提示：请关注以下要点：
+            1. 文档类型：明确需要更新的文档类型（如：架构文档、API文档、用户手册等）
+            2. 文档受众：说明文档的目标受众（如：开发者、用户、运维人员等）
+            3. 特殊要求：列出文档更新的特殊要求或格式要求
+            4. 架构文档更新：更新架构设计文档，反映新的架构结构、目录结构、模块划分和依赖关系图
+            5. API文档更新：更新公共API文档、接口定义文档、使用示例和废弃API的迁移指南
+            6. 迁移指南：编写详细的迁移指南，说明如何从旧架构迁移到新架构
+            7. 变更日志：记录所有文件迁移、配置变更、API变更和破坏性变更
+            8. README更新：更新项目README、构建说明、开发指南和贡献指南
           required: false
     prompt: |
       你是一个专业的文档管理专家，需要基于重构结果更新相关文档：
@@ -575,21 +501,13 @@ steps:
       （暂无关联代码路径）
       {% endif %}
       
-      {% if formData %}
-      {% if formData.docTypes %}
-      文档类型：
-      {{ formData.docTypes }}
-      {% endif %}
-
-      {% if formData.targetAudience %}
-      文档受众：
-      {{ formData.targetAudience }}
-      {% endif %}
-
-      {% if formData.specialRequirements %}
-      特殊要求：
-      {{ formData.specialRequirements }}
-      {% endif %}
+      当前步骤表单数据：
+      {% if formDataItems %}
+      {% for item in formDataItems %}
+      - {{ item.key }}: {{ item.value }}
+      {% endfor %}
+      {% else %}
+      （暂无表单数据）
       {% endif %}
       
       请基于以上信息，更新相关文档，包括：
@@ -619,6 +537,6 @@ steps:
          - 更新开发指南
          - 更新贡献指南
       
-      在更新文档时，请考虑文档受众的需求，遵循特殊要求，确保文档清晰易懂。
+      在更新文档时，请考虑表单数据中指定的文档受众需求，遵循特殊要求，确保文档清晰易懂。
     depends_on:
       - test-verification
